@@ -230,6 +230,7 @@ message LinuxPodSandbox {
   string cgroups_path = 4; // for NRI v1 emulation
   repeated LinuxNamespace namespaces = 5; // for NRI v1 emulation
   LinuxResources resources = 6; // for NRI v1 emulation
+  string netns = 7;
 }
 
 // Container metadata that is considered relevant for a plugin.
